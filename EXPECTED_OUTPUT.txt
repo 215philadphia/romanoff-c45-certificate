@@ -1,0 +1,3 @@
+primes: 113 | clusters: 90 | G = 100000000 | entries: 59266226 | weight overshoot: 8.231e-10
+rigorous upper bound: 0.490179107442766
+exact (first 40 digits): 4901791074427658874036093823268643477856
