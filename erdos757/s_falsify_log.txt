@@ -1,0 +1,10 @@
+n=11 best 7tau-m=21 target>24 slack=3
+n=12 best 7tau-m=25 target>26 slack=1
+n=13 best 7tau-m=27 target>28 slack=1
+n=14 best 7tau-m=30 target>30 slack=0
+n=15 best 7tau-m=31 target>32 slack=1
+n=16 best 7tau-m=32 target>34 slack=2
+n=17 best 7tau-m=34 target>36 slack=2
+n=18 best 7tau-m=35 target>38 slack=3
+n=7 best 7tau-m=16 target>16 slack=0
+n=8 best 7tau-m=16 target>18 slack=2
