@@ -1,0 +1,33 @@
+blocks: [(6, 2), (7, 2), (8, 3), (9, 3), (10, 4), (11, 4), (12, 5), (13, 5), (14, 6), (15, 6), (17, 7), (19, 8), (21, 9)]
+flexible: [(6, True), (7, False), (8, True), (9, False), (10, True), (11, False), (12, True), (13, True), (14, True), (15, True), (17, True), (19, True), (21, True)]
+pair (11,21) done 14s
+pair (12,12) done 14s
+pair (12,13) done 14s
+pair (12,14) done 14s
+pair (12,15) done 14s
+pair (12,17) done 14s
+pair (12,19) done 14s
+pair (12,21) done 15s
+pair (13,13) done 15s
+pair (13,14) done 15s
+pair (13,15) done 15s
+pair (13,17) done 15s
+pair (13,19) done 15s
+pair (13,21) done 15s
+pair (14,14) done 15s
+pair (14,15) done 15s
+pair (14,17) done 15s
+pair (14,19) done 15s
+pair (14,21) done 15s
+pair (15,15) done 15s
+pair (15,17) done 15s
+pair (15,19) done 15s
+pair (15,21) done 16s
+pair (17,17) done 16s
+pair (17,19) done 16s
+pair (17,21) done 16s
+pair (19,19) done 16s
+pair (19,21) done 17s
+pair (21,21) done 17s
+STATS {'D2_skipped_by_lemma': 28, 'D2_run': 1, 'S1_bases': 7304, 'S1_edges_tested': 0, 'S2_skipped': 24, 'S2_run': 1}
+TOTAL HITS 0
