@@ -16,8 +16,15 @@ much of what is listed as open below:
   verified in hturcotte1/Erdos-757, gives c* <= 5/9 (reported, not yet refereed). Its first member below 4/7
   is a 65-point set, C003.
 
-**Both conjectures in this branch are refuted by C003.** Independent check (2026-11-26, OR-Tools CP-SAT,
-proved optimal): C003 is a (4,5)-set with n = 65, m = 63 three-term APs, tau = 28, so h = 37.
+**Both conjectures in this branch are refuted by C003.** Independent check (2026-11-26):
+C003 is a (4,5)-set with n = 65, m = 63 three-term APs, tau = 28, so h = 37.
+- (4,5)-property: exhaustive check of all equal-difference pairs, exact integer arithmetic, 0 violations (`check_c003.py`).
+- h >= 37: the stored 37-element witness is a subset of C003 and is Sidon (all pairwise sums distinct), checked directly (`tau_highs.py`).
+- h <= 37, i.e. tau >= 28: proved optimal by two independent exact solvers, OR-Tools CP-SAT (`check_c003.py`)
+  and HiGHS MILP via scipy (`tau_highs.py`), both tau = 28 with matching lower bound. The hypergraph is a single
+  connected component, too large for the plain branch-and-bound used elsewhere here; no hand-checkable certificate.
+- Consequence, independent of the 5/9 family: by Ma–Tang Lemma 3.6 (gluing) f(65k) <= 37k, and f is subadditive,
+  so by Fekete c* = inf f(n)/n <= 37/65 ~ 0.5692 < 4/7 ~ 0.5714. (Construction due to the anonymous reader; only the check is ours.)
 - "tau <= 3n/7 on the class (linear, F7-free, |E(S)| <= |S|-2)" fails: 7*28 = 196 > 195 = 3*65.
   Its consequence C_5b = 4/7 is therefore not available by this route (and c* <= 5/9 < 4/7 anyway).
 - Conjecture S, 7*tau <= 2n + m + 2 (PROOF_SKETCH.md), fails: 196 > 2*65 + 63 + 2 = 195.
