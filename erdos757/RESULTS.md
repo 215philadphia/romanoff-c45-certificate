@@ -26,7 +26,7 @@ C003 is a (4,5)-set with n = 65, m = 63 three-term APs, tau = 28, so h = 37.
 - Consequence, independent of the 5/9 family: by Ma–Tang Lemma 3.6 (gluing) f(65k) <= 37k, and f is subadditive,
   so by Fekete c* = inf f(n)/n <= 37/65 ~ 0.5692 < 4/7 ~ 0.5714. (Construction due to the anonymous reader; only the check is ours.)
 - "tau <= 3n/7 on the class (linear, F7-free, |E(S)| <= |S|-2)" fails: 7*28 = 196 > 195 = 3*65.
-  Its consequence C_5b = 4/7 is therefore not available by this route (and c* <= 5/9 < 4/7 anyway).
+  Its consequence C_5b = 4/7 is therefore not available by this route (and c* <= 37/65 < 4/7 is verified below; 5/9 is reported).
 - Conjecture S, 7*tau <= 2n + m + 2 (PROOF_SKETCH.md), fails: 196 > 2*65 + 63 + 2 = 195.
 
 **My published note.** Zenodo concept doi:[10.5281/zenodo.24547831](https://doi.org/10.5281/zenodo.24547831),
