@@ -1,5 +1,7 @@
 # Proof progress on Conjecture S (session of 2026-11-22)
 
+> **REFUTED (2026-11-26).** Conjecture S (7τ ≤ 2n + m + 2) and the target τ ≤ 3n/7 are false: the 65-point (4,5)-set C003 has m = 63 and τ = 28 (7τ = 196 > 195), and it gives c* ≤ 37/65 < 4/7, so C_5b = 4/7 is false too. Kept for the record; see RESULTS.md.
+
 Notation: H is 3-uniform, linear, and hereditarily sparse (|E(S)| <= |S| - 2 for every S spanning an edge).
 For connected H, write the slack as sigma(H) = 2n + m + 2 - 7 tau(H). Conjecture S says sigma(H) >= 0.
 Labels: PROVEN (written proof below), EXECUTED (computer check), OBSERVED (heuristic search, not exhaustive).

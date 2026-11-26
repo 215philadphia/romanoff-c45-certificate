@@ -1,5 +1,7 @@
 # Proof sketch: C_5b = 4/7 (Erdős #757). Status: incomplete, with one explicit GAP
 
+> **REFUTED (2026-11-26).** Conjecture S (7τ ≤ 2n + m + 2) and the target τ ≤ 3n/7 are false: the 65-point (4,5)-set C003 has m = 63 and τ = 28 (7τ = 196 > 195), and it gives c* ≤ 37/65 < 4/7, so C_5b = 4/7 is false too. Kept for the record; see RESULTS.md.
+
 Every step is labeled PROVEN, EXECUTED (computer-verified), or GAP. This is single-model work and has not been independently reviewed.
 
 ## 0. Reduction (Ma–Tang 2026, cited)
