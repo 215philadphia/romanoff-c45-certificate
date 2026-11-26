@@ -1,0 +1,43 @@
+== Part 1: explicit sets ==
+PASS found a 6-point (4,5)-set with h=4: [0, 1, 2, 5, 8, 15]
+PASS A6 is a (4,5)-set (n=6)
+PASS A6: h = 4 (expected 4); a largest Sidon subset: [0, 1, 5, 8]
+PASS A6: h = n - tau(3-AP hypergraph) = 6 - 2
+PASS A8 is a (4,5)-set (n=8)
+PASS A8: h = 5 (expected 5); a largest Sidon subset: [5, 11, 16, 24, 41]
+PASS A8: h = n - tau(3-AP hypergraph) = 8 - 3
+PASS A14 (Ma-Tang) is a (4,5)-set (n=14)
+PASS A14 (Ma-Tang): h = 8 (expected 8); a largest Sidon subset: [0, 136, 200, 243, 246, 298, 323, 528]
+PASS A14 (Ma-Tang): h = n - tau(3-AP hypergraph) = 14 - 6
+
+== Part 1b: explicit glued sets (Ma-Tang Lemma 3.6) ==
+PASS C20 = A14 + A6 is a (4,5)-set (n=20)
+PASS C20 = A14 + A6: h = 12 <= 12
+     C20 = A14 + A6 = [0, 136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596, 1056, 2113, 2155, 2197, 2323, 2449, 2743]
+PASS C22 = A14 + A8 is a (4,5)-set (n=22)
+PASS C22 = A14 + A8: h = 13 <= 13
+     C22 = A14 + A8 = [0, 136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596, 1056, 2541, 2709, 2849, 2989, 3073, 3437, 3549, 4025]
+
+== Part 1c: 18-point set (v3) ==
+PASS A4 = {1,2,3,6} is a (4,5)-set with h = 3
+PASS C18 = A14 + A4 is a (4,5)-set (n=18)
+PASS C18: h = 11 = 11
+     C18 = [0, 136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596, 1056, 2113, 2122, 2131, 2158]
+
+== Part 2: lower-bound arithmetic (Henning-Yeo Thm 6, with its strict clause) ==
+  n  tau<= (Thm6)  tau<= (Thm6 strict)  Ma-Tang floor((8n-6)/17)  => f(n) >=
+   5        1              1                    2              4
+  18        8              7                    8              11
+  20        8              8                    9              12
+  22        9              9                   10              13
+  35       16             15                   16              20
+  37       16             16                   17              21
+  39       17             17                   18              22
+  52       24             23                   24              29
+  54       24             24                   25              30
+  56       25             25                   26              31
+PASS f(18) >= 11
+PASS f(20) >= 12
+PASS f(22) >= 13
+
+RESULT: ALL CHECKS PASSED
